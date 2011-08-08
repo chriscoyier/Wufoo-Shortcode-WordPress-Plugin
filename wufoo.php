@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Wufoo Shortcode Plugin
-Description: Enables shortcode to embed Wufoo forms. Usage: <code>[wufoo_form username="chriscoyier" formhash="x7w3w3" autoresize="true" height="458" header="show" ssl="true"]</code>. Soon, you'll be able to grab this from the Wufoo Code Manager.
+Description: Enables shortcode to embed Wufoo forms. Usage: <code>[wufoo username="chriscoyier" formhash="x7w3w3" autoresize="true" height="458" header="show" ssl="true"]</code>. Soon, you'll be able to grab this from the Wufoo Code Manager.
 Version: 0.1
 License: GPL
 Author: Chris Coyier / Wufoo
