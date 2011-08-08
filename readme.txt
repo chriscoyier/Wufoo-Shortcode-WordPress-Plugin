@@ -21,8 +21,6 @@ Allows the use of a special short code [wufoo] for embedding Wufoo forms. It's b
 
 For old school manual installation people: copy the folder "wufoo_shortcode" into the /wp-content/plugins/ folder. Then go to the Plugins area of the Admin and activate.
 
-== Upgrade Notice ==
-
 == Screenshots ==
 
 http://cl.ly/97Pz
@@ -42,7 +40,3 @@ http://cl.ly/97Pz
 Shortcodes are clean! You can already copy and paste JavaScript or iframe code to embed a Wufoo form onto a WordPress page, but you need to make sure to be in the "HTML" tab of the writing area. If a user is in the "Visual" (default) tab, the embed code will not work. Short codes will work either way.
 
 We also hope that this is the first step to WordPress.com integration (wink, wink).
-
-== Donations ==
-
-Not necessary.
