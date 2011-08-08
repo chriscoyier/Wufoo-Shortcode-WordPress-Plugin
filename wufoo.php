@@ -48,6 +48,6 @@ function createWufooEmbedJS($atts, $content = null) {
 	
 	}
 }
-add_shortcode('wufoo_form', 'createWufooEmbedJS');
+add_shortcode('wufoo', 'createWufooEmbedJS');
 
 ?>

@@ -1,27 +1,26 @@
-=== Your Site's Functionality Plugin ===
-Requires at least: 3.1
-Tested up to: 3.1
-Stable tag: 0.1
+=== Plugin Name ===
 
-All of the important functionality of your site belongs in this. Describe what it does!
+Contributors: Chris Coyier
+Plugin Name: Wufoo Shortcode
+Plugin URI: http://wufoo.com
+Tags: wufoo, form, shortcode
+Author URI: http://wufoo.com
+Author: Chris Coyier
+Requires at least: 2.6
+Tested up to: 3.2.1
+Stable tag: 1.0
+Version: 1.0
+
+Allows the use of a special short code [wufoo] for embedding Wufoo forms.
 
 == Description ==
 
-Plugin description, any special instructions. If nothing else, include the URL of the site that this plugin belongs to.
+Allows the use of a special short code [wufoo] for embedding Wufoo forms.
 
 == Important Notes ==
 
-= Something to remember =
-
-Don't forget about this important thing your plugin does!
-
-= Something else to remember =
-
-Don't forget this other part too!
+It's best to grab the shortcode from the Wufoo Code Manager (coming soon!).
 
 == Changelog ==
-= 0.1 =
-* Note what is involved in the new version. Any changes. Include a date like 05/2011.
 
-= 0.0 =
-* Don't start your plugin at 0.0. That's just dumb.
+1.0 - Initial release.
