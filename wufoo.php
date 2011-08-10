@@ -2,7 +2,7 @@
 /*
 Plugin Name: Wufoo Shortcode Plugin
 Description: Enables shortcode to embed Wufoo forms. Usage: <code>[wufoo username="chriscoyier" formhash="x7w3w3" autoresize="true" height="458" header="show" ssl="true"]</code>. Soon, you'll be able to grab this from the Wufoo Code Manager.
-Version: 0.1
+Version: 0.2
 License: GPL
 Author: Chris Coyier / Wufoo
 Author URI: http://wufoo.com
@@ -15,7 +15,7 @@ function createWufooEmbedJS($atts, $content = null) {
 		'autoresize' => true,
 		'height'     => '500',
 		'header'     => 'show', 
-		'ssl'        => true
+		'ssl'        => ''
 	), $atts));
 	
 	if (!$username or !$formhash) {
@@ -39,8 +39,16 @@ function createWufooEmbedJS($atts, $content = null) {
 		$JSEmbed .= "'formHash':'$formhash', ";
 		$JSEmbed .= "'autoResize':$autoresize,";
 		$JSEmbed .= "'height':'$height',";
-		$JSEmbed .= "'header':'$header', ";
-		$JSEmbed .= "'ssl':$ssl});";
+		$JSEmbed .= "'header':'$header' ";
+		
+		// Only output SSL value if passes as param
+		// Gratis and Ad Hoc plans don't show that param (don't offer SSL)
+		if ($ssl) {
+			$JSEmbed .= ",'ssl':$ssl";
+		}
+		
+		$JSEmbed .= "});";
+		
 		$JSEmbed .= "$formhash.display();";
 		$JSEmbed .= "</script>";
 		

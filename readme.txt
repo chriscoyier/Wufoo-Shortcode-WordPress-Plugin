@@ -8,14 +8,18 @@ Author URI: http://wufoo.com
 Author: Chris Coyier
 Requires at least: 2.6
 Tested up to: 3.2.1
-Stable tag: 1.0
-Version: 1.0
+Stable tag: 1.1
+Version: 1.1
 
 Allows the use of a special short code [wufoo] for embedding Wufoo forms.
 
 == Description ==
 
 Allows the use of a special short code [wufoo] for embedding Wufoo forms. It's best to grab the shortcode from the Wufoo Code Manager (coming soon!).
+
+**Usage:** `[wufoo username="chriscoyier" formhash="x7w3w3" autoresize="true" height="458" header="show" ssl="true"]`
+
+But again, it's best to grab the code directly from the Wufoo [Code Manager](http://wufoo.com/docs/code-manager/) (coming soon).
 
 == Installation ==
 
@@ -28,6 +32,8 @@ http://cl.ly/97Pz
 == Changelog ==
 
 1.0 - Initial release.
+
+1.1 - SSL param isn't included in snippet if not passed. Gratis and Ad Hoc Wufoo users don't use that param, as SSL is not offered.
 
 == Frequently Asked Questions ==
 
